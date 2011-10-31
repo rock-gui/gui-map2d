@@ -2,7 +2,8 @@
 #include <stdexcept>
 
 Map2D::Map2D(QWidget *parent):
-    op_map(parent),
+    QWidget(parent),
+    op_map(this),
     context_menu(this)
 {
     //setting up layout
