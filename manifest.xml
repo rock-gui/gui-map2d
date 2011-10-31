@@ -1,10 +1,14 @@
 <package>
-  <description brief="qt designer plugin to display 2d maps">
+  <description brief="qt widget for displaying 2d maps">
+    Widget for displaying google maps, terrains, open street maps etc.
+    and the GPS position of the vehicle as overlay. All data can be
+    cached and used offline. This widget is based on OpenPilot/GCS
   </description>
   <author>Alexander Duda/Alexander.Duda@dfki.de</author>
-  <license></license>
+  <license>The GNU Public License (GPL) Version 3</license>
   <url>http://</url>
   <logo>http://</logo>
   <rosdep name="qt4" />
+  <rosdep name="qsqlite" />
   <versioncontrol type="git" url="" />
 </package>
