@@ -1,0 +1,11 @@
+This integrates the map widget from OpenPilot/GCS into a qt desinger plugin 
+
+There are several limitation because of original code:
+--> very bad performance
+--> needs sqlite for caching 
+--> scrolling error in opengl mode 
+--> crashing if the zoom factor change is too big
+
+Feel free to improve it. If someone wants to use it more regular 
+it would be nice if we ask the people from OpenPilot to work together
+so we do not have to wrap it 
