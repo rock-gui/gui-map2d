@@ -5,6 +5,7 @@ There are several limitation because of original code:
 --> needs sqlite for caching 
 --> scrolling error in opengl mode 
 --> crashing if the zoom factor change is too big
+--> caching is done into the current working directory 
 
 Feel free to improve it. If someone wants to use it more regular 
 it would be nice if we ask the people from OpenPilot to work together
