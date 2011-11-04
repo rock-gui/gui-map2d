@@ -40,6 +40,8 @@ void Map2D::setMapType(QString type)
         op_map.SetMapType(MapType::GoogleTerrain);
     else if(type == "GoogleMap")
         op_map.SetMapType(MapType::GoogleMap);
+    else if(type == "GoogleSatellite")
+        op_map.SetMapType(MapType::GoogleSatellite);
     else
         throw std::runtime_error("Unknown map type: Supported types are GoogleTerrain, GoogleMap");
 }
