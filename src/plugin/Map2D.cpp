@@ -3,7 +3,7 @@
 
 Map2D::Map2D(QWidget *parent):
     QWidget(parent),
-    op_map(this),
+    op_map(this,new mapcontrol::Configuration()),
     context_menu(this)
 {
     //setting up layout

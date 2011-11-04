@@ -38,7 +38,7 @@ namespace mapcontrol
         isMouseOverMarker=false;
         maprect=QRectF(0,0,1022,680);
         core->SetCurrentRegion(internals::Rectangle(0, 0, maprect.width(), maprect.height()));
-        core->SetMapType(MapType::GoogleHybrid);
+        core->SetMapType(MapType::GoogleMap);
         this->SetZoom(2);
         connect(core,SIGNAL(OnNeedInvalidation()),this,SLOT(Core_OnNeedInvalidation()));
         connect(core,SIGNAL(OnMapDrag()),this,SLOT(ChildPosRefresh()));
