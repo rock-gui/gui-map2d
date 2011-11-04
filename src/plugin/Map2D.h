@@ -21,8 +21,8 @@ class Map2D:public QWidget
     void setShowDiagnostics(bool const& value){op_map.SetShowDiagnostics(value);};
 
     void setCurrentPosition(double lat, double lon){internals::PointLatLng value(lat,lon);op_map.SetCurrentPosition(value);}
-    double getCurrentPositonLat(){internals::PointLatLng pos = op_map.CurrentPosition();return pos.Lat();}
-    double getCurrentPositonLon(){internals::PointLatLng pos = op_map.CurrentPosition();return pos.Lng();}
+    double getCurrentPositionLat(){internals::PointLatLng pos = op_map.CurrentPosition();return pos.Lat();}
+    double getCurrentPositionLon(){internals::PointLatLng pos = op_map.CurrentPosition();return pos.Lng();}
 
     //    double ZoomReal(){return map->Zoom();}
     //    double ZoomDigi(){return map->ZoomDigi();}

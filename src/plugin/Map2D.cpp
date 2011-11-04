@@ -26,7 +26,10 @@ void Map2D::contextMenuEvent ( QContextMenuEvent * event )
 void Map2D::setVehiclePosition(double lat, double lng)
 {
     if(!op_map.UAV)
+    {
         op_map.SetShowUAV(true);
+        op_map.UAV->SetShowTrail(true);
+    }
     internals::PointLatLng value(lat,lng);
     op_map.UAV->SetUAVPos(value,0);
 }
@@ -49,7 +52,11 @@ void Map2D::clearVehicleTrail()
 
 void Map2D::setVehicleHeading(double rad)
 {
-    if(op_map.UAV)
-        op_map.UAV->SetUAVHeading(rad*180.0/M_PI);
+    if(!op_map.UAV)
+    {
+        op_map.SetShowUAV(true);
+        op_map.UAV->SetShowTrail(true);
+    }
+    op_map.UAV->SetUAVHeading(rad*180.0/M_PI);
 }
 
