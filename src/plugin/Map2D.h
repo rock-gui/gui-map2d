@@ -43,6 +43,7 @@ class Map2D:public QWidget
     void setVehiclePosition(double lat, double lon);
     void setVehicleHeading(double rad);
     void clearVehicleTrail();
+    void setTrailTime(int sec);
 
     void setMapType(QString type);
 
