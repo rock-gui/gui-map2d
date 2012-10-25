@@ -9,6 +9,7 @@
   <url>http://</url>
   <logo>http://</logo>
   <rosdep name="qt4" />
+  <rosdep name="qt4-opengl" />
   <rosdep name="qsqlite" />
   <versioncontrol type="git" url="" />
 </package>
