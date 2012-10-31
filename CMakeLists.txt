@@ -1,7 +1,7 @@
 # CMakeLists.txt has to be located in the project folder and cmake has to be
 # executed from 'project/build' with 'cmake ../'.
 cmake_minimum_required(VERSION 2.6)
-include($ENV{ROCK_CMAKE_MACROS}/Rock.cmake)
+find_package(Rock)
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake")
 add_definitions(-DQT_NO_DEBUG_OUTPUT)
 
