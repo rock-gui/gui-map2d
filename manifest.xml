@@ -8,6 +8,7 @@
   <license>The GNU Public License (GPL) Version 3</license>
   <url>http://</url>
   <logo>http://</logo>
+  <depend package="base/types" />
   <rosdep name="qt4" />
   <rosdep name="qt4-opengl" />
   <rosdep name="qsqlite" />
